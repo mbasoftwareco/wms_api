@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>wms_api</RootNamespace>
+    <UserSecretsId>78cead9e-dc7f-4811-9b15-1fe3844988f9</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Helpers\Inventory\**" />
+    <Compile Remove="Helpers\Receiving\**" />
+    <Content Remove="Entities\**" />
+    <Content Remove="Exceptions\**" />
+    <Content Remove="Helpers\Inventory\**" />
+    <Content Remove="Helpers\Receiving\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Helpers\Inventory\**" />
+    <EmbeddedResource Remove="Helpers\Receiving\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Helpers\Inventory\**" />
+    <None Remove="Helpers\Receiving\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Helpers\ReportHelper.cs~RFb395cfe.TMP" />
+    <None Remove="Helpers\Transportadoras.rar" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BarcodeLib" Version="2.4.0" />
+    <PackageReference Include="CoreWCF.Http" Version="1.0.2" />
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="PRINT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+</Project>

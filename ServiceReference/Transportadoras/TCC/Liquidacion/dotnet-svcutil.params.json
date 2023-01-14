@@ -1,0 +1,16 @@
+{
+  "providerId": "Microsoft.Tools.ServiceModel.Svcutil",
+  "version": "2.0.3",
+  "options": {
+    "inputs": [
+      "http://clientes.tcc.com.co/servicios/liquidacionacuerdos.asmx"
+    ],
+    "enableDataBinding": true,
+    "namespaceMappings": [
+      "*, TCCLiquidacionServiceReference"
+    ],
+    "outputFile": "TCCLiquidacionServiceReference.cs",
+    "targetFramework": "net5.0",
+    "typeReuseMode": "All"
+  }
+}
